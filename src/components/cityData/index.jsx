@@ -103,8 +103,10 @@ function City({defaultCity = ""}) {
 
     function handleSearch(e) {
         const {value} = e.target
-        setCity(value)        
+        setCity(value)      
     }
+
+    /* Écoute les changements de "city" et va chercher les données de la ville */
 
     useEffect(() => {
         async function fetchData (){
@@ -127,7 +129,7 @@ function City({defaultCity = ""}) {
     function handleKeyPress(e) {
         if (e.keyCode === 13) {
             if (citiesData) {
-                handleGiveWeather(citiesData);
+                fetchWeather(citiesData);
             }
         }
     }
@@ -136,12 +138,12 @@ function City({defaultCity = ""}) {
         if(city && citiesData) {
             setCity("")
             setCitiesData(null)
-        } else {
-            return
-        } 
+        }
     }
+
+    /* Cette fonction va chercher les infos météo en fonction du nom de la ville en paramètre */
             
-    async function handleGiveWeather(selectedCity) {
+    async function fetchWeather(selectedCity) {
         if (selectedCity) {
             const longitude = selectedCity.longitude
             const latitude = selectedCity.latitude

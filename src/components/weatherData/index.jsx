@@ -50,8 +50,10 @@ function Weather({ weatherDatas }) {
         
         const { time, temperature_2m, relativehumidity_2m, precipitation_probability, cloudcover, is_day} = weatherDatas.hourly;
         
+        /* Je fais un ".map" sur time pour récupérer les infos correspondantes à l'index de time */
+
         mergedData = time.map((element, index) => {
-            const formattedDate = format(new Date(element), 'dd/MM/yyyy HH'); /* Ici je convertis ma date qui est au format iso 8601 en objet Date pour modifier le format de la date en suivant. Pour convertir la date dans un autre format, j'ai installé la bibliothèque date-fns */
+            const formattedDate = format(new Date(element), 'dd/MM/yyyy HH'); /* Je convertis ma date qui est au format iso 8601 en objet Date pour modifier le format de la date en suivant. Pour convertir la date dans un autre format, j'ai installé la bibliothèque date-fns */
 
             return {
                 date: formattedDate,
@@ -65,7 +67,7 @@ function Weather({ weatherDatas }) {
     };
     const currentDate = new Date();
     const currentDateStr = format(currentDate, 'dd/MM/yyyy HH');
-    mergedData = mergedData.find(element => element.date === currentDateStr);
+    mergedData = mergedData.find(element => element.date === currentDateStr); /* Va chercher la date de l'élément qui correspond à la date actuelle*/
     
     const bodyElem = document.getElementById('app-body')
 

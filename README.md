@@ -22,7 +22,7 @@ Voici quelques sites utiles qui ont été bénéfiques lors du développement de
 
 - [Open Meteo - Documentation des API](https://open-meteo.com/en/docs) : Cette documentation fournit des informations détaillées sur les API Weather Forecast et Geocoding utilisées pour obtenir les prévisions météorologiques et effectuer la géolocalisation dans cette application.
 
-- [Chat GPT](https://chat.openai.com/) : Chat GPT est un modèle de langage puissant, utilisé dans ce projet pour gérer les erreurs liées au code et fournir des réponses utiles à mes questions.
+- [Dépot GitHub pour les Drapeaux de pays](https://github.com/HatScripts/circle-flags) : Ce dépot m'a servi a pouvoir mettre des drapeaux sur le site en utilisant le "coutry-code" de l'api météo.
 
 Ces ressources ont été d'une grande aide dans le développement de ce projet, en fournissant des informations claires et précieuses pour résoudre des problèmes techniques et améliorer la qualité de l'application.
 
