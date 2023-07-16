@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../assets/Roboto-Bold.ttf");
+}
+
+* {
+    font-family: "Roboto-Bold";
+}
+
+body {
+    height: 100vh;
+    background-image: url("../assets/day.jpg ");
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: hidden;
+    transition: background-image 1s ease-in-out;
+}
+
+@keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#temperature, #precipitation {
+    animation: fade-in-right 0.8s ease-in-out;
+}
+
+#humidity, #cloud {
+    animation: fade-in-left 0.8s ease-in-out;
+}
+
+#name, #country, #flag {
+    animation: fade-in 0.6s ease-in-out;
+}
