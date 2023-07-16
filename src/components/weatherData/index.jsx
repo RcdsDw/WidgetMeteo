@@ -16,6 +16,7 @@ const WeatherContainer = styled.div `
 const WeatherWrapper = styled.div `
     display: flex;
     flex-direction: column;
+    margin-top: -70px;
 `
 
 const WeatherComponent = styled.p `
