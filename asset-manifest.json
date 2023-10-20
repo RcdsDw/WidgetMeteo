@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/WidgetMeteo/static/css/main.833e7acd.css",
+    "main.js": "/WidgetMeteo/static/js/main.b5e3551e.js",
+    "static/media/day.jpg": "/WidgetMeteo/static/media/day.b7b8e1867adb24050123.jpg",
+    "static/media/night.jpg": "/WidgetMeteo/static/media/night.4b0bb851986a894660ff.jpg",
+    "static/media/Roboto-Bold.ttf": "/WidgetMeteo/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "index.html": "/WidgetMeteo/index.html",
+    "main.833e7acd.css.map": "/WidgetMeteo/static/css/main.833e7acd.css.map",
+    "main.b5e3551e.js.map": "/WidgetMeteo/static/js/main.b5e3551e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.833e7acd.css",
+    "static/js/main.b5e3551e.js"
+  ]
+}
